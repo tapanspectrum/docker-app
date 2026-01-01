@@ -32,7 +32,7 @@ pipeline {
                 sh '''
                 docker stop node-app || true
                 docker rm node-app || true
-                docker run -d -p 3000:3000 --name node-app node-app:latest
+                docker run -d -p 3008:3008 --name node-app node-app:latest
                 '''
             }
         }
