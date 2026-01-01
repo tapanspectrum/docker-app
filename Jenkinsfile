@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/tapanspectrum/docker-app.git'
+                git branch: 'main',
+                    url: 'https://github.com/tapanspectrum/docker-app.git'
             }
         }
 
